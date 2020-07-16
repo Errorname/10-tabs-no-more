@@ -1,0 +1,28 @@
+{
+  "name": "10-tabs-no-more",
+  "version": "1.0.0",
+  "description": "A Web Extension that randomly closes tabs once you exceed 10 opened tabs.",
+  "main": "",
+  "scripts": {
+    "serve": "http-server landing/",
+    "package": "cd src && zip -r -FS ../landing/10-tabs-no-more.zip *",
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Errorname/10-tabs-no-more.git"
+  },
+  "author": {
+    "name": "Thibaud Courtoison",
+    "email": "do.not.press.enter@gmail.com",
+    "url": "https://errorna.me"
+  },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Errorname/10-tabs-no-more/issues"
+  },
+  "homepage": "https://ten-tabs-no-more.web.app",
+  "dependencies": {
+    "firebase-tools": "^8.5.0"
+  }
+}

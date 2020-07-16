@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "10 tabs, no more",
+  "version": "1.0",
+  "description": "Randomly closes tabs once you exceed 10 opened tabs.",
+  "homepage_url": "https://ten-tabs-no-more.web.app",
+  "author": "Thibaud Courtoison",
+  "icons": {
+    "48": "img/binoculars48.png",
+    "96": "img/binoculars96.png",
+    "128": "img/binoculars128.png"
+  },
+  "permissions": ["notifications", "storage"],
+  "background": {
+    "scripts": [
+      "browser-polyfill.js",
+      "configuration.js",
+      "countdown.js",
+      "notifications.js",
+      "state.js",
+      "main.js"
+    ]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "10 tabs, no more",
+    "default_popup": "popup.html"
+  }
+}
